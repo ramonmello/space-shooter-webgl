@@ -2,11 +2,6 @@
 
 > **Asteroids‑style browser shooter built with vanilla JavaScript and raw WebGL.**
 
-<div align="center">
-  <!-- Replace with GIF or video once recorded -->
-  <img src="docs/media/demo-placeholder.gif" alt="Gameplay recording" width="600"/>
-</div>
-
 ---
 
 ## 🎯 Why I built it
@@ -35,39 +30,47 @@
 
 ## 🛠 Tech stack
 
-| Layer      | Choice               | Notes                                      |
-| ---------- | -------------------- | ------------------------------------------ |
-| Language   | JavaScript (ES2020)  | Plain browser APIs                         |
-| Rendering  | Raw WebGL 1.0        | Custom vertex & fragment shaders           |
-| Build tool | _None_               | Just open `index.html` or serve statically |
-| AI assist  | Cursor IDE + ChatGPT | Refactors, shader tweaks                   |
+| Layer      | Choice                     | Notes                                                       |
+| ---------- | -------------------------- | ----------------------------------------------------------- |
+| Language   | JavaScript (ES2020)        | Plain browser APIs                                          |
+| Rendering  | Raw WebGL 1.0              | Custom vertex & fragment shaders                            |
+| Build tool | _None_ (any static server) | Shader files are fetched at runtime — browsers require HTTP |
+| AI assist  | Cursor IDE + ChatGPT       | Refactors, shader tweaks                                    |
 
 ## 🏃 Getting started
 
+> **Note:** the game fetches shader files at runtime, so most browsers block it when opened via `file://`. You’ll need to serve the folder through any static HTTP server.
+
 ```bash
-# Clone
+# Clone the repository
 git clone https://github.com/ramonmello/space-shooter-webgl
 cd space-shooter-webgl
 
-# Easy: open directly in a modern browser
-open index.html
-
-# Or serve with a tiny static server (recommended)
+# Launch a tiny static server (Python 3.x)
 python -m http.server 8000
+
+# Alternative (Node.js, if installed)
+# npx serve -l 8000
 ```
 
-Then visit `http://localhost:8000` and start blasting.
+Then visit `http://localhost:8000` in your browser and start blasting.
 
 ## 🗺 Roadmap
 
 - [ ] Sound effects & background music
+- [ ] Mobile touch controls
 - [ ] Power‑ups (shield, spread shot, mega bomb)
 - [ ] Leaderboard via localStorage or a simple backend
+- [ ] Migrate rendering pipeline to **WebGL 2.0**
 - [ ] WebGPU prototype branch 🤔
 
 ## 🤝 Contributing
 
 Found a bug or have an idea? Open an issue or PR – let’s talk!
+
+## 📄 License
+
+MIT – see `LICENSE` for details.
 
 ---
 
