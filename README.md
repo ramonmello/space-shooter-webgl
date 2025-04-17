@@ -2,6 +2,12 @@
 
 > **Asteroids‑style browser shooter built with vanilla JavaScript and raw WebGL.**
 
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/5455c5f7-4123-4fc5-9a14-065434bbb91a"
+       alt="Gameplay GIF" width="900"/>
+</div>
+
+
 ---
 
 ## 🎯 Why I built it
@@ -74,10 +80,6 @@ Then visit `http://localhost:8000` in your browser and start blasting.
 ## 🤝 Contributing
 
 Found a bug or have an idea? Open an issue or PR – let’s talk!
-
-## 📄 License
-
-MIT – see `LICENSE` for details.
 
 ---
 
