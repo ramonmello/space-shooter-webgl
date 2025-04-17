@@ -41,16 +41,23 @@
 
 > **Note:** the game fetches shader files at runtime, so most browsers block it when opened via `file://`. You’ll need to serve the folder through any static HTTP server.
 
+Clone the repository
+
 ```bash
-# Clone the repository
 git clone https://github.com/ramonmello/space-shooter-webgl
 cd space-shooter-webgl
+```
 
-# Launch a tiny static server (Python 3.x)
+Launch a tiny static server (Python 3.x)
+
+```bash
 python -m http.server 8000
+```
 
-# Alternative (Node.js, if installed)
-# npx serve -l 8000
+Alternative (Node.js, if installed)
+
+```bash
+npx serve -l 8000
 ```
 
 Then visit `http://localhost:8000` in your browser and start blasting.
