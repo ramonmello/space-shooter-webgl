@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Space Shooter Game</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #000;
+      }
+      canvas {
+        display: block;
+      }
+      #gameOverMessage {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+        font-family: Arial, sans-serif;
+        font-size: 48px;
+        font-weight: bold;
+        text-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
+        display: none;
+        z-index: 10;
+        text-align: center;
+      }
+      #gameOverScore {
+        font-size: 32px;
+        margin-top: 20px;
+      }
+      #asteroidCounter {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        color: white;
+        font-family: Arial, sans-serif;
+        font-size: 24px;
+        font-weight: bold;
+        z-index: 10;
+      }
+      #playAgainButton {
+        margin-top: 30px;
+        padding: 10px 20px;
+        font-size: 24px;
+        background-color: #4caf50;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-family: Arial, sans-serif;
+        transition: background-color 0.3s;
+      }
+      #playAgainButton:hover {
+        background-color: #45a049;
+      }
+    </style>
+  </head>
+  <body>
+    <canvas id="gameCanvas"></canvas>
+    <div id="gameOverMessage">
+      GAME OVER
+      <div id="gameOverScore">Score: 0</div>
+      <button id="playAgainButton">Play Again</button>
+    </div>
+    <div id="asteroidCounter">Score: 0</div>
+    <script src="main.js"></script>
+  </body>
+</html>
